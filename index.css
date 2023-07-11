@@ -46,7 +46,6 @@ body {
 
 .cabecalho-menu-itens:hover {
   color: #cb9ba5;
-  border-bottom: 0.6px solid #fff2e7;
 }
 
 .conteudo {
@@ -96,7 +95,7 @@ body {
 }
 
 .conteudo-principal-botao:hover {
-  background-color: #c5af9e;
+ 
   position: top;
   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.854);
 }
@@ -230,4 +229,34 @@ body {
   .conteudo-secundario {
     margin-top: 0;
   }
+}
+
+.conteudo-comandos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.conteudo-comandos-titulo {
+  border-top: 0.4px solid #fff2e7;
+  padding-top: 48px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff2e7;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.conteudo-comandos-lista {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ecd6c4;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }

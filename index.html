@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="/index.css">
     <title>Akanezinha</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
+    </head>
 <body>
   
 <header class="cabecalho">
-    <h1 class="titulo">あかね</h1>>
+    <h1 class="titulo">あかね</h1>
     <nav class="cabecalho-menu" >
-    <a class="cabecalho-menu-itens" href="https://discord.gg/a469X67TkX"> Servidor</a>
-    <a class="cabecalho-menu-itens" href="#">Tutorial</a>
-    <a class="cabecalho-menu-itens" href="#"> Comandos</a>
-    <a class="cabecalho-menu-itens" href="#">Sobre o Bot</a>
+    <a id="it1" class="cabecalho-menu-itens" href="https://discord.gg/a469X67TkX"> Servidor</a>
+    <a id="it2" class="cabecalho-menu-itens" href="#">Tutorial</a>
+    <a id="it1" class="cabecalho-menu-itens" href="#secao-comandos"> Comandos</a>
+    <a id="it4" class="cabecalho-menu-itens" href="#">Sobre o Bot</a>
 </nav>
 </header>
 <main class="conteudo">
@@ -42,6 +42,33 @@
 
     </section>
 
+    <section class="conteudo-comandos" id="secao-comandos">
+        <h3 class="conteudo-comandos-titulo">Comandos do Bot</h3>
+        <ul class="conteudo-comandos-lista">
+            <li class="comando">ping - verifica a latência do bot</li>
+            <li class="comando">back - volta para a música anterior</li>
+            <li class="comando">clear - limpa a fila de reprodução</li>
+            <li class="comando">controller - exibe o controle de reprodução</li>
+            <li class="comando">filter - aplica um filtro de áudio</li>
+            <li class="comando">jump - pula para uma música específica na fila</li>
+            <li class="comando">loop - ativa ou desativa o modo de repetição</li>
+            <li class="comando">nowplaying - exibe a música atual em reprodução</li>
+            <li class="comando">pause - pausa a reprodução</li>
+            <li class="comando">play - reproduz uma música</li>
+            <li class="comando">playnext - reproduz a próxima música na fila</li>
+            <li class="comando">queue - exibe a fila de reprodução</li>
+            <li class="comando">remove - remove uma música da fila</li>
+            <li class="comando">resume - retoma a reprodução pausada</li>
+            <li class="comando">save - salva uma música ou playlist</li>
+            <li class="comando">search - pesquisa por uma música</li>
+            <li class="comando">seek - altera a posição de reprodução</li>
+            <li class="comando">shuffle - embaralha a ordem das músicas na fila</li>
+            <li class="comando">skip - pula para a próxima música na fila</li>
+            <li class="comando">stop - para a reprodução</li>
+            <li class="comando">volume - ajusta o volume de reprodução</li>
+        </ul>
+    </section>
+
 </main>
 <footer class="rodape">
 
@@ -58,5 +85,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/18473ef575.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/scripts.js"></script>
 </body>
 </html>
