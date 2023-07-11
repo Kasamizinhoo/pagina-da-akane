@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background-image: url(/imagens/rm218-bb-07.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.cabecalho-imagem {
+  width: 100%;
+  max-width: 500px;
+  padding-top: 40px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 33px;
+}
+
+.cabecalho-menu-itens {
+  font-family: "Sarala", sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.cabecalho-menu-itens:hover {
+  color: #cb9ba5;
+  border-bottom: 0.6px solid #fff2e7;
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.1px solid #fff2e7;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: #ffffff;
+}
+
+.titulo {
+  font-family: "Righteous", cursive;
+  font-weight: 500;
+  font-size: 70px;
+  color: #ffffff;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.conteudo-principal-botao {
+  background-color: #ffffff;
+  height: 60px;
+  width: 180px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.25);
+  font-family: "Sarala", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.conteudo-principal-botao:hover {
+  background-color: #c5af9e;
+  position: top;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.854);
+}
+
+.conteudo-principal-botao:active {
+  position: relative;
+  top: 4px;
+  box-shadow: none;
+}
+
+.conteudo-principal-imagem {
+  max-width: 100%;
+  height: auto;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #fff2e7;
+  padding-top: 48px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff2e7;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ecd6c4;
+}
+
+.rodape {
+  padding: 32px;
+  border-top: 0.4px solid #fff2e7;
+}
+
+.rodape-conteudo {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 54px;
+  align-items: center;
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #ecd6c4;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .conteudo-principal {
+    justify-content: center;
+  }
+
+  .conteudo-principal-escrito-titulo {
+    font-size: 36px;
+  }
+
+  .titulo {
+    font-size: 48px;
+  }
+
+  .conteudo-principal-escrito-subtitulo {
+    font-size: 18px;
+  }
+
+  .conteudo-principal-botao {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+  }
+
+  .conteudo-secundario-titulo {
+    font-size: 20px;
+  }
+
+  .conteudo-secundario-paragrafo {
+    font-size: 16px;
+  }
+
+  .rodape-conteudo {
+    font-size: 20px;
+  }
+}
+
+/* Estilos para dispositivos com largura maior que 768px (tela de PC, por exemplo) */
+@media (min-width: 769px) {
+  .conteudo-principal {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .conteudo-principal-escrito {
+    max-width: 50%;
+  }
+
+  .conteudo-principal-escrito-titulo {
+    font-size: 64px;
+  }
+
+  .titulo {
+    font-size: 70px;
+  }
+
+  .conteudo-principal-escrito-subtitulo {
+    font-size: 24px;
+  }
+
+  .conteudo-principal-botao {
+    height: 60px;
+    width: 180px;
+    font-size: 24px;
+  }
+
+  .conteudo-principal-imagem {
+    height: 500px;
+  }
+
+  .conteudo-secundario {
+    margin-top: 0;
+  }
+}
