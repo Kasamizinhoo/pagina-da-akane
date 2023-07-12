@@ -94,7 +94,6 @@ body {
 }
 
 .conteudo-principal-botao:hover {
- 
   position: top;
   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.854);
 }
@@ -141,15 +140,15 @@ body {
 }
 
 .rodape-conteudo {
-  display: flex;
+  display: contents;
   flex-flow: row wrap;
-  padding-left: 54px;
-  align-items: center;
+  padding-left: 85px;
+  align-items: left;
   font-family: "Sarala", sans-serif;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 50px;
   color: #ecd6c4;
-  margin-right: 15px;
+  margin-right: 45px;
   text-decoration: none;
 }
 
