@@ -122,7 +122,7 @@ body {
   padding-top: 48px;
   font-family: "Righteous", cursive;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 30px;
   color: #fff2e7;
   margin-bottom: 16px;
 }
@@ -185,7 +185,7 @@ body {
   }
 
   .rodape-conteudo {
-    font-size: 45px;
+    font-size: 20px;
   }
 }
 
@@ -243,7 +243,7 @@ body {
   padding-top: 48px;
   font-family: "Righteous", cursive;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 30px;
   color: #fff2e7;
   margin-bottom: 16px;
   text-align: center;
@@ -257,4 +257,29 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.conteudo-principal-imagem {
+  transition: transform 0.3s ease;
+}
+
+.zoom-in {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.zoom-out {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.animar {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animar-rolagem {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -12,9 +12,9 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    // Faz com que o título apareça suavemente quando a página é carregada
+    // faz com que o título apareça suavemente quando a página é carregada
     $(".titulo").hide().fadeIn(2000);
-     // Adiciona uma animação de rolagem suave para todos os links
+     // aiciona uma animação de rolagem suave para todos os links
     $("a").on('click', function(event) {
       if (this.hash !== "") {
         event.preventDefault();
@@ -26,15 +26,54 @@ $(document).ready(function() {
         });
       }
     });
-     // Faz com que o botão mude de cor quando o mouse passa sobre ele
-    $(".conteudo-principal-botao").hover(function() {
-      $(this).css("background-color", "#c5af9e");
-    }, function() {
-      $(this).css("background-color", "#ffffff");
+    
+
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      var topoJanela = $(window).scrollTop();
+      var alturaJanela = $(window).height();
+  
+      $(".animar").each(function() {
+        var elementoTopo = $(this).offset().top;
+  
+        if (elementoTopo < topoJanela + alturaJanela) {
+          $(this).addClass("animar-rolagem");
+        }
+      });
+  
+      if (topoJanela > 200) {
+        $(".cabecalho-menu").addClass("menu-rolagem");
+      } else {
+        $(".cabecalho-menu").removeClass("menu-rolagem");
+      }
     });
+  });
+  
+
+  $(document).ready(function() {
+    // adiciona animação de zoom in ao passar o mouse na imagem
+    $(".conteudo-principal-imagem").on("mouseenter", function() {
+      $(this).addClass("zoom-in");
+    });
+  
+    // remove a classe zoomin ao remover o mouse da imagem
+    $(".conteudo-principal-imagem").on("mouseleave", function() {
+      $(this).removeClass("zoom-in");
+    });
+  });
+
+  $(document).ready(function() {
+    $(".conteudo-principal-botao").hover(
+      function() {
+        $(this).addClass("zoom-in");
+      },
+      function() {
+        $(this).removeClass("zoom-in");
+      }
+    );
   });
   
 
   
   
-  
+})
