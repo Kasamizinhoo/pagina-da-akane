@@ -135,22 +135,37 @@ body {
 }
 
 .rodape {
-  padding: 32px;
-  border-top: 0.4px solid #fff2e7;
+  padding: 15px;
+  border-top: 0.2px solid #fff2e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rodape-conteudo {
-  display: contents;
-  flex-flow: row wrap;
-  padding-left: 85px;
-  align-items: left;
+  display: flex;
+  align-items: center;
   font-family: "Sarala", sans-serif;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 30px;
   color: #ecd6c4;
   margin-right: 45px;
   text-decoration: none;
 }
+.rodape-conteudo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ecd6c4;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+
+
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
